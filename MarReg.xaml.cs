@@ -23,6 +23,10 @@ namespace begunBezikov
         public MarReg()
         {
             InitializeComponent();
+            Paul.Items.Add("Фонд 1");
+            Paul.Items.Add("Фонд 1");
+            Paul.Items.Add("Фонд 1");
+            Paul.Items.Add("Фонд SCP");
         }
 
         private void Da1(object sender, RoutedEventArgs e)
