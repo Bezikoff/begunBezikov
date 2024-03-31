@@ -1,0 +1,28 @@
+﻿<Page x:Class="begunBezikov.Reziki"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:begunBezikov"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Reziki">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock TextAlignment="Center" FontSize="36" Text="Мои результаты"/>
+            <TextBlock Text="Это - список всех ваших прошлых результатов гонки для Marathon Skills." Width="600" TextWrapping="Wrap" TextAlignment="Center" FontSize="20"/>
+            <TextBlock Text="Общее место сравнивает всех бегунов." Width="600" TextWrapping="Wrap" TextAlignment="Center" FontSize="20"/>
+            <TextBlock Text="Место по категории сравнивает бегунов по своей категории веса и пола." Width="600" TextWrapping="Wrap" TextAlignment="Center" FontSize="20"/>
+            <DataGrid Margin="0, 20, 0, 0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Марафон"/>
+                    <DataGridTextColumn Header="Дистанция"/>
+                    <DataGridTextColumn Header="Время"/>
+                    <DataGridTextColumn Header="Общее место"/>
+                    <DataGridTextColumn Header="Место по категории"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>

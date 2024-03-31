@@ -16,23 +16,19 @@ using System.Windows.Shapes;
 namespace begunBezikov
 {
     /// <summary>
-    /// Логика взаимодействия для RegAsRun.xaml
+    /// Логика взаимодействия для Sponsorshit.xaml
     /// </summary>
-    public partial class RegAsRun : Page
+    public partial class Sponsorshit : Page
     {
-        public RegAsRun()
+        public Sponsorshit()
         {
             InitializeComponent();
         }
 
-        private void ClLogin(object sender, RoutedEventArgs e)
+        public class Phone
         {
-            NavigationService.Navigate(new Login());
-        }
-
-        private void Newbie(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new RegBegun());
+            public string Спонсор { get; set; }
+            public string Сумма { get; set; }
         }
     }
 }

@@ -16,23 +16,24 @@ using System.Windows.Shapes;
 namespace begunBezikov
 {
     /// <summary>
-    /// Логика взаимодействия для RegAsRun.xaml
+    /// Логика взаимодействия для MarReg.xaml
     /// </summary>
-    public partial class RegAsRun : Page
+    public partial class MarReg : Page
     {
-        public RegAsRun()
+        public MarReg()
         {
             InitializeComponent();
         }
 
-        private void ClLogin(object sender, RoutedEventArgs e)
+        private void Da1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Login());
+            MessageBox.Show("Спасибо за вашу регистрацию на марафоне Marathon skills 2016! С вами свяжутся по поводу оплаты");
+            NavigationService.Navigate(new BegunMenu());
         }
 
-        private void Newbie(object sender, RoutedEventArgs e)
+        private void Net1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new RegBegun());
+            NavigationService.GoBack();
         }
     }
 }

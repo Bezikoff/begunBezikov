@@ -22,8 +22,18 @@ namespace begunBezikov
         public NotMainWindow()
         {
             InitializeComponent();
-            Frame MainFR = new Frame();
-            MainFR.Navigate(new RegAsRun());
+            MainFR.Content = new RegAsRun();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFR.CanGoBack) { MainFR.GoBack(); }
+            else 
+            {
+                MainWindow yes = new MainWindow();
+                yes.Show();
+                Close(); 
+            }
         }
     }
 }

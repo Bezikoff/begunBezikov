@@ -24,5 +24,15 @@ namespace begunBezikov
         {
             InitializeComponent();
         }
+
+        private void Da(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new BegunMenu());
+        }
+
+        private void Net(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new RegAsRun());
+        }
     }
 }

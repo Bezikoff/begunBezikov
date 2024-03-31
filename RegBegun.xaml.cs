@@ -16,23 +16,27 @@ using System.Windows.Shapes;
 namespace begunBezikov
 {
     /// <summary>
-    /// Логика взаимодействия для RegAsRun.xaml
+    /// Логика взаимодействия для RegBegun.xaml
     /// </summary>
-    public partial class RegAsRun : Page
+    public partial class RegBegun : Page
     {
-        public RegAsRun()
+        public RegBegun()
         {
             InitializeComponent();
+            Paul.Items.Add("Мужской");
+            Paul.Items.Add("Женский");
+            Paul.Items.Add("Перфоратор");
+            Country.Items.Add("СССР");
         }
 
-        private void ClLogin(object sender, RoutedEventArgs e)
+        private void Yes1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Login());
+            NavigationService.Navigate(new MarReg());
         }
 
-        private void Newbie(object sender, RoutedEventArgs e)
+        private void No1(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new RegBegun());
+            NavigationService.Navigate(new RegAsRun());
         }
     }
 }

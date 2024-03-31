@@ -4,18 +4,18 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="NotMainWindow" Height="450" Width="800">
+        Title="NotMainWindow" Height="850" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition Height="6*"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="40"></RowDefinition>
         </Grid.RowDefinitions>
         <Rectangle Fill="Gray"></Rectangle>
         <Rectangle Fill="Gray" Grid.Row="2"></Rectangle>
-        <Button Width="90" HorizontalAlignment="Left" Content="Назад"></Button>
+        <Button Width="90" HorizontalAlignment="Left" Content="Назад" Click="Button_Click"></Button>
         <TextBlock Text="MARATHON SKILLS 2016" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="125, 0, 0, 0" FontSize="25" Foreground="White" FontWeight="Medium"></TextBlock>
-        <Frame Name="MainFR" Grid.Row="1"/>
+        <Frame Name="MainFR" Grid.Row="1" NavigationUIVisibility="Hidden"/>
 
     </Grid>
 </Window>

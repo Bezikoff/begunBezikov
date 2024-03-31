@@ -16,23 +16,13 @@ using System.Windows.Shapes;
 namespace begunBezikov
 {
     /// <summary>
-    /// Логика взаимодействия для RegAsRun.xaml
+    /// Логика взаимодействия для Reziki.xaml
     /// </summary>
-    public partial class RegAsRun : Page
+    public partial class Reziki : Page
     {
-        public RegAsRun()
+        public Reziki()
         {
             InitializeComponent();
-        }
-
-        private void ClLogin(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new Login());
-        }
-
-        private void Newbie(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new RegBegun());
         }
     }
 }

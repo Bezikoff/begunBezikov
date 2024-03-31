@@ -1,0 +1,28 @@
+﻿<Page x:Class="begunBezikov.BegunMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:begunBezikov"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="BegunMenu">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Меню бегуна" TextAlignment="Center" FontSize="36" Margin="0, 40, 0, 0"></TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="100" Width="300" Content="Регистрация на марафон" Click="MarReg"></Button>
+                <Button Height="100" Width="300" Content="Мои результаты" Click="MyResi"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="100" Width="300" Content="Редактирование профиля" Click="ProfEdit"></Button>
+                <Button Height="100" Width="300" Content="Мой спонсор" Click="Sponsori"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Height="100" Width="300" Content="Контакты" Click="Mobila"></Button>
+                <Button Height="100" Width="300" Visibility="Hidden" Click="Nothing"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

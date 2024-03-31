@@ -11,7 +11,7 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Height="100" Width="300" Content="Я учавствовал ранее" Click="ClLogin"></Button>
-            <Button Height="100" Width="300" Content="Я новый участник"></Button>
+            <Button Height="100" Width="300" Content="Я новый участник" Click="Newbie"></Button>
         </StackPanel>
         <Button Height="50" Width="100" Content="login" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="ClLogin"></Button>
     </Grid>

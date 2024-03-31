@@ -23,8 +23,8 @@
                 <TextBox Width="300" Margin="5"></TextBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button Content="Login" Width="125" Height="40"></Button>
-                <Button Content="Cancel" Width="125" Height="40"></Button>
+                <Button Content="Login" Width="125" Height="40" Click="Da"></Button>
+                <Button Content="Cancel" Width="125" Height="40" Click="Net"></Button>
             </StackPanel>
         </StackPanel>
     </Grid>

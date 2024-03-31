@@ -10,29 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace begunBezikov
 {
     /// <summary>
-    /// Логика взаимодействия для RegAsRun.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class RegAsRun : Page
+    public partial class Window1 : Window
     {
-        public RegAsRun()
+        public Window1()
         {
             InitializeComponent();
         }
 
-        private void ClLogin(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Login());
-        }
-
-        private void Newbie(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new RegBegun());
+            Close();
         }
     }
 }
